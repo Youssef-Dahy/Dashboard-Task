@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dashboard</title>
+
+    <!-- bootstrap style -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+    <!-- font-awesome css -->
+    <link rel="stylesheet" href="assets/css/all.min.css" />
+
+    <link
+      href="assets/vendor/bootstrap-select/dist/css/bootstrap-select.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- customize stylesheet -->
+    <link rel="stylesheet" href="assets/css/style.css" />
+  </head>
+  <body>
+    <input type="checkbox" id="toggle-nav" />
+    <!-- Start of SideNav Section -->
+    <div class="sideNav pt-5">
+      <div class="logo pt-3">
+        <a href=""
+          ><img src="assets/Image/codeZoneLogo.png" width="100px" alt="logo"
+        /></a>
+      </div>
+      <div class="sideMenu">
+        <div class="item">
+          <a href="" class="active">
+            <i class="fa-solid fa-home"></i>
+            <span>Dashboard</span>
+          </a>
+        </div>
+        <div class="item">
+          <a href="">
+            <i class="fa fa-envelope"></i>
+            <span>Email</span>
+          </a>
+        </div>
+        <div class="item sideNavPhone">
+          <a href="">
+            <i class="fa fa-phone"></i>
+            <span>Phone</span>
+          </a>
+        </div>
+        <div class="item">
+          <a href="">
+            <i class="fa-solid fa-comment"></i>
+            <span>Comment</span>
+          </a>
+        </div>
+        <div class="item">
+          <a href="">
+            <i class="fa fa-cog"></i>
+            <span>Setting</span>
+          </a>
+        </div>
+        <div class="item">
+          <a href="">
+            <i class="fa fa-sign-out"></i>
+            <span>Log Out</span>
+          </a>
+        </div>
+      </div>
+    </div>
+    <!-- End of SideNav Section -->
+
+    <!-- Start of Main Section -->
+    <div class="main-content">
+      <header class="fixed-top">
+        <div class="left-header align-items-center">
+          <!-- <a href=""
+            ><img src="assets/Image/codeZoneLogo.png" width="100px" alt="logo"
+          /></a> -->
+          <label for="toggle-nav">
+            <i class="fa-solid fa-bars"></i>
+          </label>
+          <div class="search">
+            <input
+              class="w-100 form-control"
+              placeholder="search..."
+              type="search"
+            />
+            <button type="submit"><i class="fa-solid fa-search"></i></button>
+          </div>
+        </div>
+        <div class="right-header">
+          <div class="message">
+            <i class="fa-solid fa-message"></i>
+            <div class="message-box">
+              <span>message</span>
+              <div class="message-list">
+                <div class="message-image">
+                  <img
+                    src="assets/Image/pngtree-cartoon-color-simple-mal.png"
+                    alt=""
+                  />
+                </div>
+                <div class="message-text">
+                  <h6>Youssef Dahy</h6>
+                  <p>Lorem, ipsum dolor.</p>
+                </div>
+              </div>
+              <div class="message-list">
+                <div class="message-image">
+                  <img
+                    src="assets/Image/pngtree-cartoon-color-simple-mal.png"
+                    alt=""
+                  />
+                </div>
+                <div class="message-text">
+                  <h6>Youssef Dahy</h6>
+                  <p>Lorem, ipsum dolor.</p>
+                </div>
+              </div>
+              <div class="message-list">
+                <div class="message-image">
+                  <img
+                    src="assets/Image/pngtree-cartoon-color-simple-mal.png"
+                    alt=""
+                  />
+                </div>
+                <div class="message-text">
+                  <h6>Youssef Dahy</h6>
+                  <p>Lorem, ipsum dolor.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="profile">
+            <img
+              src="assets/Image/pngtree-cartoon-color-simple-mal.png"
+              alt="profile-image"
+            />
+            <div class="user-menu">
+              <ul>
+                <li>
+                  <a href=""
+                    ><i class="fa-solid fa-arrow-right-from-bracket"></i
+                    >Logout</a
+                  >
+                </li>
+                <li>
+                  <a href=""><i class="fa-solid fa-gear"></i>Setting</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <!-- start of content section  -->
+      <section class="banner">
+        <div class="container">
+          <div class="row py-2">
+            <div class="col-md-6">
+              <div class="card">
+                <div class="card-body">
+                  <canvas id="lineChart_3"></canvas>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-2 py-3">
+              <div class="card bg-card invoice-card shadow border-white">
+                <div
+                  class="card-body d-flex justify-content-center align-items-center"
+                >
+                  <div>
+                    <span class="text-white fs-18">Lorem, ipsum.</span>
+                    <h2 class="text-white invoice-num">1.0285</h2>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-2 py-3">
+              <div class="card bg-info invoice-card shadow border-white">
+                <div
+                  class="card-body d-flex justify-content-center align-items-center"
+                >
+                  <div>
+                    <span class="text-white fs-18">Lorem, ipsum.</span>
+                    <h2 class="text-white invoice-num">1.0285</h2>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-2 py-3">
+              <div class="card bg-third-card invoice-card">
+                <div
+                  class="card-body d-flex justify-content-center align-items-center"
+                >
+                  <div>
+                    <span class="text-white fs-18">Lorem, ipsum.</span>
+                    <h2 class="text-white invoice-num">1.0285</h2>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-lg-3 col-md-3 py-2">
+              <div class="card p-2 text-center">
+                <div class="border-0">
+                  <div>
+                    <h4 class="card-title mb-2 text-muted">Dolor Sit</h4>
+                  </div>
+                </div>
+                <div class="card-body">
+                  <div class="progress default-progress">
+                    <div
+                      class="progress-bar bg-card progress-animated"
+                      style="width: 45%; height: 20px"
+                      role="progressbar"
+                    >
+                      <span class="sr-only">45% Complete</span>
+                    </div>
+                  </div>
+
+                  <div class="progress default-progress mt-4">
+                    <div
+                      class="progress-bar bg-card progress-animated"
+                      style="width: 70%; height: 20px"
+                      role="progressbar"
+                    >
+                      <span class="sr-only">70% Complete</span>
+                    </div>
+                  </div>
+
+                  <div class="progress default-progress mt-4">
+                    <div
+                      class="progress-bar bg-card progress-animated"
+                      style="width: 35%; height: 20px"
+                      role="progressbar"
+                    >
+                      <span class="sr-only">35% Complete</span>
+                    </div>
+                  </div>
+                  <div class="progress default-progress mt-4">
+                    <div
+                      class="progress-bar bg-card progress-animated"
+                      style="width: 95%; height: 20px"
+                      role="progressbar"
+                    >
+                      <span class="sr-only">95% Complete</span>
+                    </div>
+                  </div>
+                  <div class="text-center">
+                    <p>Lorem, ipsum.</p>
+                    <h4 class="text-card">2.658</h4>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-3 py-2">
+              <div class="card p-2 text-center">
+                <div class="border-0">
+                  <div>
+                    <h4 class="card-title mb-2 text-muted">Dolor Sit</h4>
+                  </div>
+                </div>
+                <div class="card-body">
+                  <div class="progress default-progress">
+                    <div
+                      class="progress-bar bg-third-card progress-animated"
+                      style="width: 45%; height: 20px"
+                      role="progressbar"
+                    >
+                      <span class="sr-only">45% Complete</span>
+                    </div>
+                  </div>
+
+                  <div class="progress default-progress mt-4">
+                    <div
+                      class="progress-bar bg-third-card progress-animated"
+                      style="width: 70%; height: 20px"
+                      role="progressbar"
+                    >
+                      <span class="sr-only">70% Complete</span>
+                    </div>
+                  </div>
+
+                  <div class="progress default-progress mt-4">
+                    <div
+                      class="progress-bar bg-third-card progress-animated"
+                      style="width: 35%; height: 20px"
+                      role="progressbar"
+                    >
+                      <span class="sr-only">35% Complete</span>
+                    </div>
+                  </div>
+                  <div class="progress default-progress mt-4">
+                    <div
+                      class="progress-bar bg-third-card progress-animated"
+                      style="width: 95%; height: 20px"
+                      role="progressbar"
+                    >
+                      <span class="sr-only">95% Complete</span>
+                    </div>
+                  </div>
+                  <div class="text-center">
+                    <p>Lorem, ipsum.</p>
+                    <h4 class="text-third-card">2.658</h4>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 py-2">
+              <div class="card">
+                <div class="card-header">
+                  <h4 class="text-center">Lorem, ipsum dolor sit amet.</h4>
+                </div>
+                <div class="card-body">
+                  <canvas id="barChart_3"></canvas>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-6 py-2">
+              <div class="card">
+                <div class="card-header">
+                  <h4 class="card-title text-center">Ipsum dolor</h4>
+                </div>
+                <div class="card-body">
+                  <canvas id="areaChart_1"></canvas>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-3 py-2">
+              <div class="card">
+                <div class="card-body position-relative">
+                  <div
+                    class="container-widget d-flex justify-content-center align-items-center"
+                  >
+                    <div
+                      class="ui-widgets d-flex justify-content-center align-items-center"
+                    >
+                      <div class="ui-labels text-center">70%</div>
+                    </div>
+                  </div>
+                  <div class="text-center">
+                    <h6>Lorem, ipsum.</h6>
+                    <p class="h4 text-circle">1.0285</p>
+                    <p class="text-muted">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Quis
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-3 py-2">
+              <div class="card">
+                <div class="card-body position-relative">
+                  <div
+                    class="container-widget d-flex justify-content-center align-items-center"
+                  >
+                    <div
+                      class="ui-widgets-2 d-flex justify-content-center align-items-center"
+                    >
+                      <div class="ui-labels-2 text-center" id="progress-label">
+                        70%
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="text-center">
+                    <h6>Lorem, ipsum.</h6>
+                    <p class="h4 text-card">1.0285</p>
+                    <p class="text-muted">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Quis
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- End of content section  -->
+    </div>
+
+    <!-- End of Main Section -->
+
+    <!-- Required vendors -->
+    <script
+      data-cfasync="false"
+      src="../cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"
+    ></script>
+    <script src="assets/vendor/global/global.min.js"></script>
+    <script src="assets/vendor/bootstrap-select/dist/js/bootstrap-select.min.js"></script>
+    <script src="assets/vendor/chart.js/Chart.bundle.min.js"></script>
+
+    <!-- Chart ChartJS plugin files -->
+    <script src="assets/vendor/chart.js/Chart.bundle.min.js"></script>
+    <script src="assets/js/plugins-init/chartjs-init.js"></script>
+    <script src="assets/vendor/chartist/js/chartist.min.js"></script>
+    <script src="assets/vendor/chartist-plugin-tooltips/js/chartist-plugin-tooltip.min.js"></script>
+
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/all.min.js"></script>
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>
